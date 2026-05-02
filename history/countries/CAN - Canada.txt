@@ -1,0 +1,29 @@
+capital = 276
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = reactionarism
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	reactionarism = 58
+	syndicalism = 12
+	conservatism = 14
+	liberalism = 14
+	progressivism = 12
+}
+
+create_country_leader = {
+	name = "Arthur Meighan"
+	desc = "Arthur Meighan"
+	picture = "gfx/leaders/CAN/arthur_meighan.dds"
+	ideology = evolutionary_conservatism
+}

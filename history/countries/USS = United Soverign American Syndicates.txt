@@ -1,0 +1,87 @@
+capital = 395
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = syndicalism
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	left_communism = 15
+	authsoc = 12
+	syndicalism = 26
+	radical_democracy = 9
+	anarchism = 19
+	tatsoc = 3
+	natsynd = 2
+	progressivism = 4
+	reactionarism = 10
+}
+
+create_country_leader = {
+	name = "Bill Haywood"
+	desc = "Bill Haywood, now the leader of the United Sovereign American Syndicates, is a union man at heart."
+	picture = "gfx/leaders/USS/bill_haywood.dds"
+	ideology = reformist_syndicalism
+}
+
+
+create_country_leader = {
+	name = "Eugene V. Debs"
+	desc = "Eugene V. Debs, now the leader of the United Sovereign American Syndicates, is a union man at heart."
+	picture = "gfx/leaders/USS/eugene_v_debs.dds"
+	ideology = industrial_unionism_raddem
+}
+
+create_country_leader = {
+	name = "Emma Goldman"
+	desc = "'Fiery Red Emma' Goldman, now the leader of the United Sovereign American Syndicates, is a passionate advocate for anarcho-communism."
+	picture = "gfx/leaders/USS/emma_goldman.dds"
+	ideology = anarcho_communism
+}
+
+create_country_leader = {
+	name = "C.E. Ruthenberg"
+	desc = "C.E. Ruthenberg, now the leader of the United Sovereign American Syndicates, is a dedicated communist."
+	picture = "gfx/leaders/USS/c_e_ruthenberg.dds"
+	ideology = vanguardism_authsoc
+}
+
+create_country_leader = {
+	name = "Bill Haywood"
+	desc = "Bill Haywood has gone mad with power! He now determines himself the one leader of the United Sovereign American Syndicates, and has declared himself the 'Supreme Syndicalist'."
+	picture = "gfx/leaders/USS/bill_haywood_insane.dds"
+	ideology = vanguardism_tatsoc
+}
+
+create_country_leader = {
+	name = "Bill Haywood"
+	desc = "Bill Haywood has gone mad with power! He now determines himself the one leader of the United Sovereign American Syndicates, and has declared himself the 'Supreme Syndicalist'."
+	picture = "gfx/leaders/USS/bill_haywood_insane.dds"
+	ideology = personalist_syndicalism_natsynd
+}
+
+create_country_leader = {
+	name = "Victor L. Berger"
+	picture = "gfx/leaders/USS/bill_haywood_insane.dds"
+	ideology = paternalistic_progressivism
+}
+
+create_country_leader = {
+	name = "Norman Thomas"
+	picture = "gfx/leaders/USS/bill_haywood_insane.dds"
+	ideology = democratic_socialism
+}
+
+create_country_leader = {
+	name = "Daniel De Leon"
+	picture = "gfx/leaders/USS/bill_haywood_insane.dds"
+	ideology = de_leonism
+}

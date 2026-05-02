@@ -1,0 +1,33 @@
+﻿capital = 64
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	conservatism = 33
+	liberalism = 25
+	reactionarism = 20
+	progressivism = 12
+	natsynd = 3
+	corporatism = 3
+	syndicalism = 2
+	radical_democracy = 2
+
+}
+
+create_country_leader = {
+	name = "Gustav Stresemann"
+	desc = "Gustav Stresemann was a German statesman who served as Chancellor in 1923 and Foreign Minister from 1923 to 1929, during the Weimar Republic. He is best known for his efforts to stabilize Germany's economy and improve relations with other countries after World War I."
+	picture = "gfx/leaders/GER/gustav_stresemann.dds"
+	ideology = volkish_conservatism
+}

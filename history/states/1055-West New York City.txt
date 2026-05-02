@@ -1,0 +1,32 @@
+state={
+	id=1055
+	name="STATE_1055"
+	manpower = 200000
+	
+	state_category = megalopolis
+
+	history={
+		owner = USS
+		victory_points = {
+			13385 5
+		}
+		victory_points = {
+			13386 10
+		}
+		buildings = {
+			infrastructure = 4 #was: 7
+			industrial_complex = 7
+			air_base = 4
+
+		}
+		add_core_of = USS
+		add_core_of = USA
+	}
+
+	provinces={
+		13385 13386
+	}
+	
+
+	local_supplies=15.0 
+}

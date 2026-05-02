@@ -1,0 +1,52 @@
+﻿spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_WCG_rosa_luxemburg"
+		texturefile = "gfx/leaders/WCG/rosa_luxemburg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SFI_benito_mussolini"
+		texturefile = "gfx/leaders/SFI/benito_mussolini.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USS_bill_haywood"
+		texturefile = "gfx/leaders/USS/bill_haywood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_john_pershing"
+		texturefile = "gfx/leaders/USA/john_pershing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_MES_emiliano_zapata"
+		texturefile = "gfx/leaders/MES/emiliano_zapata.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CAN_arthur_meighen"
+		texturefile = "gfx/leaders/CAN/arthur_meighen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CEN_central_american_congress_lib"
+		texturefile = "gfx/leaders/CEN/central_american_congress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_COS_us_military_command"
+		texturefile = "gfx/leaders/COS/us_military_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_PAN_us_military_command"
+		texturefile = "gfx/leaders/PAN/us_military_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_MEX_alvaro_obregon_salido"
+		texturefile = "gfx/leaders/MEX/alvaro_obregon_salido.dds"
+	}
+}

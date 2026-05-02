@@ -1,0 +1,32 @@
+capital = 1047
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = despotism
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+	despotism = 82
+	reactionarism = 10
+	liberalism = 4
+	conservatism = 4
+	
+}
+
+create_country_leader = {
+	name = "John Pershing"
+	desc = "John Pershing, the former commander of the American Expeditionary Forces in World War I, has taken control of the remnants of the former United States in the wake of the American Revolution. With his military background and strong leadership skills, Pershing has established a new government that emphasizes order and stability. Under his rule, the United States has become a more authoritarian state, with a focus on national unity and strength. Despite some opposition from those who favor a more democratic system, Pershing's leadership has been widely praised for bringing stability to a country torn apart by conflict."
+	picture = "gfx/leaders/USA/john_pershing.dds"
+	ideology = occidental_despotism
+}
+
+puppet = COS
+puppet = PAN

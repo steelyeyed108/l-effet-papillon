@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_ideology_occidental_despotism"
+        texturefile = "gfx/interface/ideologies/occidental_despotism_icon.dds"
+    }
+}

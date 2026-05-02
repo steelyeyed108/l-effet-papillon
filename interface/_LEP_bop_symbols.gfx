@@ -1,0 +1,11 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_bop_leftist_centralization_side"
+        texturefile = "gfx/bop/bop_centralization_leftist.dds"
+    }
+
+	spriteType = {
+        name = "GFX_bop_leftist_decentralization_side"
+        texturefile = "gfx/bop/bop_decentralization_leftist.dds"
+    }
+}

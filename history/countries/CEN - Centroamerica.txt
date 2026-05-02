@@ -1,0 +1,127 @@
+capital = 312
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	liberalism = 24
+	conservatism = 14
+	syndicalism = 12
+	reactionarism = 14
+	progressivism = 12
+	authsoc = 4
+	tatsoc = 2
+	left_communism = 4
+	radical_democracy = 4
+	corporatism = 2
+	despotism = 6
+	natsynd = 2
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = classical_liberalism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = council_communism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = reformist_syndicalism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = revolutionary_centralism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = militarized_socialism_tatsoc
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = national_populism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = evolutionary_socialism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = traditional_conservatism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = agrarian_paternalism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = authoritarian_conservatism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = right_populism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = integralism_corp
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress.dds"
+	ideology = national_syndicalism
+}
+
+create_country_leader = {
+	name = "Central American Congress"
+	desc = "Central American Congress"
+	picture = "gfx/leaders/CEN/central_american_congress_destruction.dds"
+	ideology = insurrectionary_anarchism
+}
