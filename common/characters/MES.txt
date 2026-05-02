@@ -1,0 +1,15 @@
+characters = {
+	MES_great_leader={
+		name="Emiliano Zapata"
+		portraits={
+			civilian={
+				large="GFX_portrait_MES_emiliano_zapata"
+			}
+		}
+		country_leader={
+			ideology = zapatismo
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

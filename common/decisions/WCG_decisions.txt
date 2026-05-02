@@ -1,0 +1,42 @@
+WCG_centralization_balance_category = {
+	WCG_decentralize_power = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		visible = {
+			always = yes
+		}
+		available = {
+			power_balance_value = {
+				id = WCG_centralization_balance
+				value > -1
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = WCG_centralization_balance
+				value = -0.05
+			}
+		}
+	}
+
+	WCG_centralize_power = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		visible = {
+			always = yes
+		}
+		available = {
+			power_balance_value = {
+				id = WCG_centralization_balance
+				value < 1
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = WCG_centralization_balance
+				value = 0.05
+			}
+		}
+	}
+
+}

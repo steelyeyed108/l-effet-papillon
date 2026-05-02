@@ -1,0 +1,15 @@
+characters = {
+	SFI_great_leader={
+		name="Benito Mussolini"
+		portraits={
+			civilian={
+				large="GFX_portrait_SFI_benito_mussolini"
+			}
+		}
+		country_leader={
+			ideology = mussolinism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

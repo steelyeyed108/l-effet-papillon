@@ -1,0 +1,15 @@
+characters = {
+	USA_great_leader={
+		name="John Pershing"
+		portraits={
+			civilian={
+				large = "GFX_portrait_USA_john_pershing"
+			}
+		}
+		country_leader={
+			ideology = occidental_despotism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

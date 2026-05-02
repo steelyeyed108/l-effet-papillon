@@ -1,0 +1,15 @@
+characters = {
+	USS_great_leader={
+		name="Bill Haywood"
+		portraits={
+			civilian={
+				large="GFX_portrait_USS_bill_haywood"
+			}
+		}
+		country_leader={
+			ideology = american_syndicalism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters = {
+	CAN_great_leader={
+		name="Arthur Meighen"
+		portraits={
+			civilian={
+				large="GFX_portrait_CAN_arthur_meighen"
+			}
+		}
+		country_leader={
+			ideology = evolutionary_conservatism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters = {
+	MES_great_leader={
+		name = "Álvaro Obregón Salido"
+		portraits={
+			civilian={
+				large = "GFX_portrait_MEX_alvaro_obregon_salido"
+			}
+		}
+		country_leader={
+			ideology = catholic_conservatism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

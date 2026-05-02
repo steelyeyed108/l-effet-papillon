@@ -1,0 +1,15 @@
+characters = {
+	WCG_great_leader={
+		name="Rosa Luxemburg"
+		portraits={
+			civilian={
+				large="GFX_portrait_WCG_rosa_luxemburg"
+			}
+		}
+		country_leader={
+			ideology = luxemburgism
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

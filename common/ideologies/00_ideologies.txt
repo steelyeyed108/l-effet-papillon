@@ -1,0 +1,921 @@
+ideologies = {
+
+	democratic = {
+		types = {
+			test = {
+			}
+		}
+
+		color = {
+			0 0 255
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+	
+	fascism = {
+		types = {
+			test = {
+			}
+		}
+
+		color = {
+			255 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	communism = {
+		types = {
+			test = {
+			}
+		}
+
+		color = {
+			255 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	neutrality = {
+		types = {
+			test = {
+			}
+		}
+
+		color = {
+			255 255 255
+		}
+
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = no
+		}
+	}
+
+
+
+
+	left_communism = {
+		types = {
+
+			luxemburgism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			orthodox_bordigism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			roman_spartacism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			council_communism = {
+			}
+
+			abstentionism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			orthodox_marxism = {
+			}
+
+			de_leonism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			zapatismo = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_LEFT_COMMUNIST_1"
+			"FACTION_NAME_LEFT_COMMUNIST_2"
+		}
+
+		color = {
+			130 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+			
+		modifiers = {
+			join_faction_tension = 0
+		}
+
+		ai_communist = yes
+	}
+
+	syndicalism = {
+		types = {
+			revolutionary_syndicalism = {
+			}
+
+			reformist_syndicalism = {
+			}
+
+			industrial_unionism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			market_syndicalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			anti_imperialist_syndicalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_SYNDICALIST_1"
+			"FACTION_NAME_SYNDICALIST_2"
+			"FACTION_NAME_SYNDICALIST_3"
+			"FACTION_NAME_SYNDICALIST_4"
+			"FACTION_NAME_SYNDICALIST_5"
+		}
+
+		color = {
+			185 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			join_faction_tension = 0.2
+		}
+
+		ai_communist = yes
+	}
+
+	anarchism = {
+
+		types = {
+
+			christian_anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			illegalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			anarcho_pacifism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			insurrectionary_anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			egoism = {
+				color = {
+					0 128 128
+				}
+			}
+
+			anarcho_collectivism = {
+			}
+
+			mutualism = {
+				color = {
+					255 152 29
+				}
+			}
+
+			anarcho_communism = {
+			}
+
+			anarcho_syndicalism = {
+			}
+
+			communalist_anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			port_soverignity = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			agrarian_anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			zapatismo_anar = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1"
+			"FACTION_NAME_ANARCHIST 2"
+		}
+
+		color = {
+			4 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = no
+			can_send_volunteers = yes
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		modifiers = {
+			join_faction_tension = 0
+		}
+
+		ai_communist = yes
+	}
+
+	authsoc = {
+
+		types = {
+
+			vanguardism_authsoc = {
+			}
+
+			revolutionary_centralism = {
+			}
+
+			state_syndicalism = {
+			}
+
+			council_dictatorship = {
+			}
+
+			technocratic_socialism = {
+			}
+			
+			militarized_socialism = {
+			}
+
+			bolshevism_authsoc = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			trotskyism = {
+			}	
+
+			red_federalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			war_communism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			democratic_red_caesarism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			american_syndicalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_AUTHSOC_1"
+		}
+
+		color = {
+			90 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			join_faction_tension = 0
+		}
+
+		ai_communist = yes
+	}
+
+
+	tatsoc = {
+
+		types = {
+			bolshevism_tatsoc = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+			
+			left_strasserism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			meiji_statism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			red_caesarism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			purity_vanguardism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			fascist_statism = {
+			}
+
+			vanguardism_tatsoc ={
+			}
+
+			hamburgism_tatsoc = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			personalist_syndicalism_tatsoc = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			fosterism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			militarized_socialism_tatsoc = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_TATSOC_1"
+		}
+
+		color = {
+			70 0 0
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+	}
+
+	radical_democracy = {
+		types = {
+			mussolinism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			national_socialism = {
+			}
+
+			technocracy = {
+			}
+
+			new_way_anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			longism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			fusion_liberalism = {
+			}
+
+			red_liberalism = {
+			}
+
+			red_conservatism = {
+			}
+
+			orange_centrism = {
+			}
+
+			national_populism = {
+			}
+
+			reformist_syndicalism_raddem = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			industrial_unionism_raddem = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_RADICAL_DEMOCRACY_1"
+		}
+
+		color = {
+			237 106 123
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			join_faction_tension = 0.4
+		}
+	}
+
+	progressivism = {
+
+		types = {
+
+			radical_egalitarianism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			civic_syndicalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			industrial_democracy = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			progressive_conservatism = {
+			}
+
+			progressive_liberalism = {
+			}
+
+			wilsonianism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			roosevelt_progressivism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			democratic_socialism = {
+			}
+
+			evolutionary_socialism = {
+			}
+
+			agrarian_socialism = {
+			}
+
+			socialism = {
+			}
+
+			constitutional_monarchism_prog = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			reformist_syndicalism_prog = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_PROGRESSIVISM_1"
+		}
+
+		color = {
+			91 130 113
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	liberalism = {
+
+		types = {
+			classical_liberalism = {
+			}
+
+			social_liberalism = {
+			}
+
+			market_liberalism = {
+			}
+
+			liberal_internationalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			national_liberalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			wilsonianism_lib = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			constitutional_monarchism_lib = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		color = {
+			255 236 35
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_LIBERALISM_1"
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+
+	}
+
+	conservatism = {
+
+		types = {
+			traditional_conservatism = {
+			}
+
+			social_conservatism = {
+			}
+
+			national_conservatism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			red_conservatism_con = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			progressive_conservatism_con = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			roosevelt_progressivism_con = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			volkish_conservatism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			constitutional_monarchism_con = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			catholic_conservatism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		color = {
+			73 79 255
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_CONSERVATISM_1"
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+	
+	paternalism = {
+
+		types = {
+			paternalistic_conservatism = {
+			}
+
+			paternalistic_progressivism = {
+				color = {
+					211 59 193
+				}
+			}
+
+			paternalistic_liberalism = {
+			}
+
+			one_nation_conservatism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			prussian_socialism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			progressive_conservatism_pate = {
+			}
+
+			agrarian_paternalism = {
+			}
+
+			eccelesiastical_paternalism = {
+			}
+
+			paternal_autocracy = {
+			}
+
+		}
+
+		color = {
+			124 231 255
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_PATERNALISM_1"
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+	}
+
+	despotism = {
+
+		types = {
+			occidental_despotism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			eccelesiastical_despotism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			kolchakism_desp = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			monarchism_desp = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			    color = {
+					182 0 182
+				}
+			}
+
+			absolute_monarchism_desp = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			    color = {
+					122 0 122
+				}
+			}
+
+			volkish_nationalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			authoritarian_conservatism = {
+			}
+
+			military_junta = {
+			}
+
+			pershingism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			oriental_despotism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			true_caesarism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DESPOTISM_1"
+		}
+
+		color = {
+			149 149 151
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	reactionarism = {
+
+		types = {
+			evolutionary_conservatism = {
+			}
+			
+			monarchism_reac = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = {
+					182 0 182
+				}
+			}
+
+			absolute_monarchism_reac = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = {
+					122 0 122
+				}
+
+			}
+
+			integralism_reac = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			right_populism = {
+			}
+
+			clerical_reactionarism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			freikorpsism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			irredentism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			general_anti_bolshevism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			military_democracy = {
+			}
+
+			kolchakism_reac = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_REACTIONARISM_1"
+		}
+
+		color = {
+			152 85 155
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	corporatism = {
+
+		types = {
+			fascist_syndicalism = {
+			}
+
+			technocratic_corporatism = {
+			}
+
+			sorelianism_corp = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			social_catholicism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			fiumanism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			integralism_corp = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			syndicalism_corp = {
+				color = {
+					255 38 47
+				}
+			}
+
+			social_corporatism = {
+				color = {
+					255 38 47
+				}
+			}
+
+			producerism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = {
+					255 38 47
+				}
+			}
+
+		}
+
+		color = {
+			70 65 65
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_CORPORATISM_1"
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+
+	natsynd = {
+
+		types = {
+			national_syndicalism = {
+			}
+
+			hamburgism_natsynd = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			national_bolshevism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			sorelianism_natsynd = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			balboism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			national_revolutionary_syndicalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			personalist_syndicalism_natsynd = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+		}
+
+		color = {
+			135 91 14
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NATSYND_1"
+		}
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+	}
+}

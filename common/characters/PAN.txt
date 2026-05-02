@@ -1,0 +1,15 @@
+characters = {
+	PAN_great_leader={
+		name="U.S. Military Command"
+		portraits={
+			civilian={
+				large="GFX_portrait_PAN_us_military_command"
+			}
+		}
+		country_leader={
+			ideology = military_junta
+			traits = {}
+			expire="1938.1.1.1"
+		}
+	}
+}

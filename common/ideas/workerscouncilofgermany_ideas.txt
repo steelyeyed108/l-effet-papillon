@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		 improving_workers_rights = {
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_gain = -0.10
+				monthly_population = -0.05
+
+			}
+		 }
+			
+	}
+}

@@ -1,0 +1,599 @@
+focus_tree = {
+	id = surreal_italian_focus_tree_cw
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			OR = {
+				tag = SFI
+			}
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 2300 y = 3000 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	#Civilwar Tree
+
+	focus = {
+		id = SFI_a_nation_in_crisis
+		icon = GFX_goal_placeholder
+        x = 2
+		y = 1
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_sieze_the_airways
+		icon = GFX_goal_generic_radar
+        prerequisite = { focus = SFI_a_nation_in_crisis }
+		x = 0
+		y = 3
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_emergency_popular_comittees
+		icon = GFX_goal_placeholder
+        prerequisite = { focus = SFI_a_nation_in_crisis }
+		x = 4
+		y = 3
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_break_the_old_parties
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_sieze_the_airways }
+		prerequisite = { focus = SFI_emergency_popular_comittees }
+		x = 2
+		y = 5
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_rally_the_opressed
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_break_the_old_parties }
+		x = 2
+		y = 7
+		cost = 5
+	}
+
+ #Popular Front
+	focus = {
+		id = SFI_popular_front_cw
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_rally_the_opressed }
+		mutually_exclusive = { focus = SFI_empower_the_military}
+		x = 0
+		y = 9
+		cost = 5
+	}
+	
+	focus = {
+		id = SFI_promise_land_reform
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_popular_front_cw }
+		cost = 5
+		x = 0
+		y = 11
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_honor_the_arditi_legacy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_popular_front_cw }
+		cost = 5
+		x = -2
+		y = 11
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_increased_workers_rights
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_promise_land_reform }
+		cost = 5
+		x = 0
+		y = 13
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_italy_for_all_italians
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_increased_workers_rights }
+		mutually_exclusive = { focus = SFI_universal_sufferage_in_arms }
+		cost = 5
+		x = 0
+		y = 15
+		completion_reward = { }
+	}
+
+    focus = {
+		id = SFI_crush_internal_elites
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_italy_for_all_italians }
+		cost = 5
+		x = 0
+		y = 17
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_universal_sufferage_in_arms
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_increased_workers_rights }
+		cost = 5
+		x = -2
+		y = 15
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_create_peoples_assemblies
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_universal_sufferage_in_arms }
+		cost = 5
+		x = -2
+		y = 17
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_a_free_italy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_crush_internal_elites focus = SFI_create_peoples_assemblies }
+		cost = 5
+		x = -1
+		y = 19
+		completion_reward = { }
+	}
+
+ #Military Democracy
+	focus = {
+		id = SFI_empower_the_military
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_rally_the_opressed }
+		mutually_exclusive = { focus = SFI_popular_front_cw }
+		x = 4
+		y = 9
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_purge_extremist_squads
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_empower_the_military }
+		mutually_exclusive = { focus = SFI_integrate_the_moderate_blackshirts }
+		x = 4
+		y = 11
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_integrate_the_moderate_blackshirts
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_empower_the_military }
+		mutually_exclusive = { focus = SFI_purge_extremist_squads }
+		x = 6
+		y = 11
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_the_republic_over_all
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_purge_extremist_squads focus = SFI_integrate_the_moderate_blackshirts }
+		x = 4
+		y = 13
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_an_army_to_serve_the_nation
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_the_republic_over_all }
+		mutually_exclusive = { focus = SFI_emergency_wartime_parliament }
+		x = 4
+		y = 15
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_an_oath_to_the_people
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_an_army_to_serve_the_nation }
+		x = 4
+		y = 17
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_emergency_wartime_parliament
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_the_republic_over_all }
+		mutually_exclusive = { focus = SFI_an_army_to_serve_the_nation}
+		x = 6
+		y = 15
+		completion_reward = { }
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_limit_civil_liberties
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_emergency_wartime_parliament }
+		x = 6
+		y = 17
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SFI_the_armed_republic
+		icon = GFX_goal_placeholder
+		cost = 5
+		prerequisite = { focus = SFI_an_oath_to_the_people focus = SFI_limit_civil_liberties }
+		x = 5
+		y = 19
+		completion_reward = { }
+		cost = 5
+	}
+
+	#unified
+
+	focus = {
+		id = SFI_secure_northern_industry
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_free_italy focus = SFI_the_armed_republic }
+		x = 1
+		y = 21
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_control_the_railways
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_free_italy focus = SFI_the_armed_republic }
+		x = 3
+		y = 21
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_a_new_italian_republic
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_secure_northern_industry }
+		prerequisite = {focus = SFI_control_the_railways}
+		x = 2
+		y = 23
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_march_on_rome
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_new_italian_republic }
+		x = 2
+		y = 25
+		cost = 5
+	}
+	
+	focus = {
+		id = SFI_victory_of_the_republic
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_march_on_rome }
+		x = 2
+		y = 27
+		cost = 5
+	}
+
+	#MILITARY TREE
+
+	focus = {
+		id = SFI_the_italian_army
+		icon = GFX_goal_placeholder
+        x = 11
+		y = 1
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_merge_army_and_nation
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_the_italian_army }
+        x = 11
+		y = 3
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	#democratic army
+
+	focus = {
+		id = SFI_allow_minority_enlisting
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_merge_army_and_nation }
+		mutually_exclusive = { focus = SFI_professionalize_the_officer_corps }
+        x = 9
+		y = 5
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_establish_the_citizens_soldiers_of_italy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_allow_minority_enlisting }
+        x = 9
+		y = 7
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_the_peoples_army
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_establish_the_citizens_soldiers_of_italy }
+        x = 9
+		y = 9
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_a_democratic_doctrine
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_the_peoples_army }
+        x = 9
+		y = 11
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_officers_answer_to_parliament
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_democratic_doctrine }
+        x = 9
+		y = 13
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_oversee_the_military
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_officers_answer_to_parliament }
+        x = 9
+		y = 15
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_recognize_local_militias
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_democratic_doctrine }
+        x = 7
+		y = 13
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_regional_defense_command
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_recognize_local_militias }
+        x = 7
+		y = 15
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_a_decentralized_model
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_oversee_the_military }
+		prerequisite = { focus = SFI_regional_defense_command }
+        x = 9
+		y = 17
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	#Professional Army
+
+	focus = {
+		id = SFI_professionalize_the_officer_corps
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_merge_army_and_nation }
+		mutually_exclusive = { focus = SFI_allow_minority_enlisting }
+        x = 13
+		y = 5
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_enforce_service
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_professionalize_the_officer_corps }
+        x = 13
+		y = 7
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+	
+	focus = {
+		id = SFI_purge_militas
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_enforce_service }
+        x = 13
+		y = 9
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_a_modern_war_doctrine
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_purge_militas }
+        x = 13
+		y = 11
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_scientific_war_doctrine
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_modern_war_doctrine }
+        x = 13
+		y = 13
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_expand_war_colleges
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_scientific_war_doctrine }
+        x = 13
+		y = 15
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+	
+	focus = {
+		id = SFI_an_elite_force
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_modern_war_doctrine }
+        x = 15
+		y = 13
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_create_the_special_forces
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_an_elite_force }
+        x = 15
+		y = 15
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = SFI_a_modern_model
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_expand_war_colleges }
+		prerequisite = { focus = SFI_create_the_special_forces}
+        x = 13
+		y = 17
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+	#Unified
+
+	focus = {
+		id = SFI_an_army_fit_for_italy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = SFI_a_modern_model focus = SFI_a_decentralized_model }
+        x = 11
+		y = 19
+		offset = {
+			x = 3
+			y = 0
+		}
+		cost = 5
+	}
+
+}

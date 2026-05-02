@@ -1,0 +1,261 @@
+focus_tree = {
+	id = uss_focus_authsoc_one
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			OR = {
+				tag = USS
+			}
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 2300 y = 3000 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	#FIRST TREE - AUTHSOC
+
+	focus = {
+		id = USS_free_and_fair_elections
+		icon = GFX_goal_placeholder
+		cost = 1
+		x = 5
+		y = 0
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_purge_the_syndicates
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_free_and_fair_elections }
+		cost = 1
+		relative_position_id = USS_free_and_fair_elections
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_call_the_trade_unions
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_purge_the_syndicates }
+		cost = 1
+		relative_position_id = USS_purge_the_syndicates
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_mass_radio_on_deck
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_free_and_fair_elections }
+		cost = 1
+		relative_position_id = USS_free_and_fair_elections
+		x = 1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_row_up_your_boats
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_mass_radio_on_deck }
+		cost = 1
+		relative_position_id = USS_mass_radio_on_deck
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_lets_win_this
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_row_up_your_boats }
+		prerequisite = { focus = USS_call_the_trade_unions }
+		cost = 1
+		relative_position_id = USS_row_up_your_boats
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_a_doughface_candidacy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_lets_win_this }
+		cost = 1
+		relative_position_id = USS_lets_win_this
+		x = -2
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_a_lame_duck_candidacy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_lets_win_this }
+		cost = 1
+		relative_position_id = USS_lets_win_this
+		x = 2
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_the_left_dough
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_a_doughface_candidacy }
+		cost = 1
+		relative_position_id = USS_a_doughface_candidacy
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_fill_in_with_foster
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_the_left_dough }
+		cost = 1
+		relative_position_id = USS_the_left_dough
+		x = 1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_buck_a_browder
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_the_left_dough }
+		cost = 1
+		relative_position_id = USS_the_left_dough
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_the_left_after
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_fill_in_with_foster }
+		prerequisite = { focus = USS_buck_a_browder }
+		cost = 1
+		relative_position_id = USS_fill_in_with_foster
+		mutually_exclusive = { focus = USS_the_right_after }
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_a_centrist_america
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_a_lame_duck_candidacy }
+		cost = 1
+		relative_position_id = USS_a_lame_duck_candidacy
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_a_chat_with_pelley
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_a_centrist_america }
+		cost = 1
+		relative_position_id = USS_a_centrist_america
+		x = 1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_ally_schneider
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_a_centrist_america }
+		cost = 1
+		relative_position_id = USS_a_centrist_america
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_the_right_after
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_ally_schneider }
+		prerequisite = { focus = USS_a_chat_with_pelley }
+		cost = 1
+		relative_position_id = USS_a_chat_with_pelley
+		mutually_exclusive = { focus = USS_the_left_after }
+		x = -1
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_and_our_ally
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_the_right_after }
+		prerequisite = { focus = USS_the_left_after }
+		cost = 1
+		relative_position_id = USS_the_right_after
+		x = -2
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_our_candidacy
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_and_our_ally }
+		cost = 1
+		relative_position_id = USS_and_our_ally
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_the_first_party_congress
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_our_candidacy }
+		cost = 1
+		relative_position_id = USS_our_candidacy
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_blessed_be_by_father
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_the_first_party_congress }
+		cost = 1
+		relative_position_id = USS_the_first_party_congress
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USS_carry_on_my_wayward_son
+		icon = GFX_goal_placeholder
+		prerequisite = { focus = USS_blessed_be_by_father }
+		cost = 1
+		relative_position_id = USS_blessed_be_by_father
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+
+}
